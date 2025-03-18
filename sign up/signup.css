@@ -1,0 +1,225 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #EC255A, #f7e1e9); 
+    font-family: 'Work Sans', sans-serif;
+    background-repeat: no-repeat;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 80%; /* Adjust this to control the width of the content and photo */
+    background-color: rgba(255, 255, 255, 0.334); /* Adding a background color for content */
+    border-radius: 1rem;
+    color: white;
+}
+
+.content {
+    flex: 1; /* Occupy remaining space */
+    padding: 2rem;
+}
+
+.photo {
+    flex: 1; /* Occupy remaining space */
+    background: url('your-photo.png') no-repeat right center;
+    background-size: cover; /* Make sure the photo covers the entire space */
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.photo img {
+    max-width: 80%;
+    height: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+.card{
+    background-color: hsla(0, 0%, 100%, 0.334);
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.card header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a{
+    padding: 1rem;
+}
+
+.google, .microsoft,  .twitter{
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+.apple {
+    width: 50px;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.google{
+    background-image: url(images/google.png);
+}
+
+.microsoft{
+    background-image: url(images/microsoft.png);
+}
+
+.apple{
+    background-image: url(images/apple-logo.png);
+}
+
+.twitter{
+    background-image: url(images/twitter.png);
+}
+
+.google, .microsoft, .apple, .twitter{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.google:hover, .microsoft:hover, .apple:hover, .twitter:hover{
+    cursor: pointer;
+}
+
+.form-item{
+    background-color: hsla(0, 0%, 100%, 0.577);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: .5rem 1rem;
+    color: black;
+    padding-right: 2.5rem;
+}
+
+.login-button{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.checkbox{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.terms-and-Conditions a{
+    text-decoration: none;  
+    color: #2B3467;
+}
+
+.form-item input[type="email"],
+.form-item input[type="password"],
+.form-item input[type="text"]{
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    padding-left: 2.5rem;
+    font-size: large;
+}
+
+.form-item input[type="text"]{
+    background-image: url(./icons/person_FILL0_wght600_GRAD0_opsz48.png);
+}
+
+.form-item input[type="email"]{
+    background-image: url(/icons/mail_FILL0_wght600_GRAD0_opsz48.png);
+}
+
+.form-item input[type="password"]{
+    background-image: url(/icons/lock_FILL0_wght600_GRAD0_opsz48.png);
+}
+
+.form-item input[type="text"],.form-item input[type="email"],.form-item input[type="password"]{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input[type=submit]{
+    background-color:#27227c  ;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bolder;
+}
+
+input[type=submit]:hover{
+    color: white;
+    background-color: #09005b;
+    cursor: pointer;
+    transition: background-color 0.27s ease-in-out;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+}
+
+.login a{
+    text-decoration: none;
+    color: #2B3467;
+}
+
+.terms-and-Conditions a:hover, .login a:hover{
+    color: #A62349;
+}
+
+.alert {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px; /* Adjust as needed */
+    background-color: #f8d7da; /* Red for danger messages */
+    color: #721c24;
+    padding: 10px; /* Increased padding for better readability */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    z-index: 9999; /* Ensures the alert is on top of other elements */
+    font-size: 16px; /* Adjust font size if necessary */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: opacity 0.3s ease-in-out; /* Add smooth transition for opacity */
+    opacity: 0; /* Initially hidden */
+}
+
+.alert.show {
+    opacity: 1; /* Make the alert visible */
+}
+
+.alert-success {
+    background-color: #d4edda; /* Green for success messages */
+    color: #155724;
+}
+

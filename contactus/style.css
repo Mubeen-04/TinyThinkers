@@ -1,0 +1,171 @@
+/* Reset some default styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+    background: linear-gradient(to right,#cca882, #f9dab9eb);
+    margin: 0; /* Reset margin to remove spacing */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.334);
+    border-radius: 1rem;
+    color: white;
+    /* height: 550px; */
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+
+/* Login form styles */
+.card {
+    background-color: hsla(0, 0%, 100%, 0.334);
+    border-radius: 1rem;
+    width: 750px;
+    height: 430px;
+    color: white;
+}
+
+.card header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+    color: black;
+}
+
+.card .form-item {
+    padding: 1rem;
+}
+
+.form-item {
+    background-color: hsla(0, 0%, 100%, 0.577);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: .5rem 1rem;
+    color: black;
+    padding-right: 2.5rem;
+}
+
+.login-button {
+    display: flex;
+    justify-content: right;
+    padding: 1rem 2rem;
+}
+
+
+
+.form-item input[type="email"],
+.form-item input[type="text"],
+.form-item textarea[type="message"]
+{
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    padding-left: 2.5rem;
+    font-size: large;
+    font-family: 'Work Sans', sans-serif; /* Add the font-family here */
+}
+
+input[type=submit] {
+    background-color: #332d9f;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bolder;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: #0c0079;
+    cursor: pointer;
+    transition: background-color 0.27s ease-in-out;
+}
+
+p a {
+    color: #2B3467;
+}
+
+p a:hover {
+    color: #A62349;
+}
+
+section header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0.5rem;
+}
+
+hr {
+    margin-top: -1.5rem;
+    border-color: rgba(0, 0, 0, 0.684);
+}
+
+/* Slider styles */
+.slider {
+    width: 392px;
+    /* max-width: 100vw; */
+    height: 550px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.item video {
+    height: 560px;
+}
+
+ /* Hide the play/pause button */
+ video::-webkit-media-controls-play-button,
+ video::-webkit-media-controls-start-playback-button {
+     display: none !important;
+ }
+
+ /* Hide the current time display */
+ video::-webkit-media-controls-current-time-display {
+     display: none !important;
+ }
+
+ /* Hide the time duration display (optional) */
+ video::-webkit-media-controls-time-remaining-display {
+     display: none !important;
+ }
+ /* Hide all video controls */
+ video::-webkit-media-controls {
+    display: none !important;
+}
+.success-message {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+/* Style for error message */
+.error-message {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
