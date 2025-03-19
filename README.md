@@ -15,8 +15,6 @@ A fun and interactive website designed for kids to learn and explore through eng
 - **Database:** MySQL  
 - **Server:** XAMPP  
 
-## 📸 Screenshots  
-![TinyThinkers](https://github.com/yourusername/TinyThinkers/assets/your-image-link)  
 
 ## 🔧 Installation  
 To run the project locally, follow these steps:  
